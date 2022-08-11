@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Time</title>
+
+    <script>
+      `use strict`;
+      function buildTime() {
+        const timeDisplay = document.getElementById("time");
+        const dateString = new Date().toLocaleString();
+        const formattedString = dateString.replace(", ", " - ");
+        timeDisplay.textContent = formattedString;
+      }
+      setInterval(buildTime, 1000);
+    </script>
+    <style>
+      body {
+        border: solid 2px olive;
+        margin-left: 350px;
+        margin-right: 350px;
+        color: rgb(202, 149, 13);
+        margin-top: 100px;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div align="center">
+      <h1 style="color: black"><u>TIME</u></h1>
+      <h1>This webpage represents the present time.</h1>
+    </div>
+    <div id="time-div" class="time-div" align="center">
+      <h1>Time is <span id="time"> </span></h1>
+    </div>
+  </body>
+</html>
