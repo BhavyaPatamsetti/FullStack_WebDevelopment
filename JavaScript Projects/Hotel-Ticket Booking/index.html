@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Ticket Booking</title>
+    <style>
+      .topnav {
+        background-color: black;
+        overflow: hidden;
+      }
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 19px;
+      }
+
+      .topnav a:hover {
+        background-color: linen;
+        color: crimson;
+      }
+
+      .topnav-right {
+        float: right;
+      }
+
+      .img1 {
+        position: relative;
+        width: 50%;
+      }
+
+      .img1 .btn {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .img1 .btn:hover {
+        background-color: rgb(0, 0, 0);
+      }
+    </style>
+    <script>
+      function fun() {
+        alert("Room booked sucessfully!!");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="nav-bar" id="nav-bar">
+      <div class="topnav">
+        <a href="#">Hotel Marina 😈👻</a>
+        <div class="topnav-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="services.html">Service</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div id="img1" class="img1">
+      <img src="2.jpeg" width="1424px" height="640px" />
+      <button id="btn" class="btn" onclick="fun()">Book Here</button>
+    </div>
+    <br />
+
+    <footer align="center">
+      <span
+        >Created By
+        <a href="https://www.linkedin.com/in/bhavyapatamsetti/"
+          >Bhavya Patamsetti</a
+        >
+        | <span class="far fa-copyright"></span> 2022 All rights reserved.</span
+      >
+    </footer>
+  </body>
+</html>
